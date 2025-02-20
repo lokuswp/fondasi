@@ -1,0 +1,236 @@
+{
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#24261b",
+					"name": "Primary",
+					"slug": "custom-primary"
+				},
+				{
+					"color": "#e1e1e1",
+					"name": "Secondary",
+					"slug": "custom-secondary"
+				},
+				{
+					"color": "#f5f5f5",
+					"name": "Accent",
+					"slug": "custom-accent"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Light",
+					"slug": "custom-light"
+				},
+				{
+					"color": "#000",
+					"name": "Dark",
+					"slug": "custom-dark"
+				}
+			]
+		},
+		"dimensions": {
+			"aspectRatios": [
+				{
+					"name": "Wide Extra - 16:10",
+					"ratio": "16/10",
+					"slug": "16-10"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "768px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Geist",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/geist/geist-700-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "Geist",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/geist/geist-800-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "Geist",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/geist/geist-500-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "Geist",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/geist/geist-400-normal.ttf"
+							]
+						},
+						{
+							"fontFamily": "Geist",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/geist/geist-600-normal.ttf"
+							]
+						}
+					],
+					"fontFamily": "Geist",
+					"name": "Geist",
+					"slug": "geist"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/group": {
+				"spacing": {
+					"blockGap": "0.8rem"
+				}
+			},
+			"core/site-tagline": {
+				"typography": {
+					"fontSize": "0.85rem"
+				}
+			},
+			"core/site-title": {
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					},
+					"padding": {
+						"bottom": "0",
+						"top": "0"
+					}
+				},
+				"typography": {
+					"fontSize": "1.2rem"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--white)",
+			"text": "var(--wp--preset--color--custom-primary)"
+		},
+		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\n.mb-kill {\n    margin-bottom: -6px !important;\n}",
+		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--custom-primary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontSize": "1.8rem"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontSize": "1.6rem",
+					"lineHeight": "1.5"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.4rem"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1.2rem"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "1.1rem"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "1rem"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--custom-primary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"lineHeight": "1.5"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--custom-dark)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--custom-primary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontStyle": "normal",
+					"fontWeight": "600",
+					"lineHeight": "1.5",
+					"textDecoration": "none"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "15px"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--geist)",
+			"fontSize": "1rem",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.5"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+}
