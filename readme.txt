@@ -15,6 +15,9 @@ Fondasi is a Starter Block Theme for WordPress, built to serve as a foundation f
 = 1.0.0 =
 * Initial release.
 
+= 1.1.0 =
+* New Interface.
+
 == Copyright ==
 
 Fondasi WordPress Theme, (C) 2025 LokusWP.  
@@ -25,9 +28,10 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 == Fonts ==
 
 Geist
-Copyright 2020 The Plus Jakarta Sans Project Authors (https://github.com/tokotype/PlusJakartaSans)  
-Source: https://www.tokotype.com  
-License: This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+Copyright (c) 2023 Vercel, in collaboration with basement.studio
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+https://github.com/vercel/geist-font/blob/main/LICENSE.txt
 
 == Images ==
 

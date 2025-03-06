@@ -3,17 +3,13 @@ Theme Name: Fondasi
 Theme URI: https://lokuswp.com/themes/fondasi
 Author: LokusWP
 Author URI: https://lokuswp.com
-Description: Starter Block Theme
+Description: Starter FSE Block Theme
 Requires at least: 6.6
 Tested up to: 6.6
 Requires PHP: 8.0
-Version: 1.0.1
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fondasi
 Tags: blog
 */
-
-.wc-block-components-sidebar-layout .wc-block-components-main{
-padding: 0 !important;
-}

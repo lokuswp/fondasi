@@ -135,7 +135,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--white)",
+			"background": "var(--wp--preset--color--custom-light)",
 			"text": "var(--wp--preset--color--custom-primary)"
 		},
 		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\n.mb-kill {\n    margin-bottom: -6px !important;\n}",
