@@ -4,7 +4,7 @@
 		"color": {
 			"palette": [
 				{
-					"color": "#24261b",
+					"color": "#282828",
 					"name": "Primary",
 					"slug": "custom-primary"
 				},
@@ -14,7 +14,7 @@
 					"slug": "custom-secondary"
 				},
 				{
-					"color": "#f5f5f5",
+					"color": "#dc0000",
 					"name": "Accent",
 					"slug": "custom-accent"
 				},
@@ -27,6 +27,11 @@
 					"color": "#000",
 					"name": "Dark",
 					"slug": "custom-dark"
+				},
+				{
+					"color": "#f3f3f7",
+					"name": "Border",
+					"slug": "custom-border"
 				}
 			]
 		},
@@ -45,10 +50,10 @@
 		},
 		"spacing": {
 			"units": [
+				"rem",
 				"%",
 				"px",
 				"em",
-				"rem",
 				"vh",
 				"vw"
 			]
@@ -138,25 +143,25 @@
 			"background": "var(--wp--preset--color--custom-light)",
 			"text": "var(--wp--preset--color--custom-primary)"
 		},
-		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\n.mb-kill {\n    margin-bottom: -6px !important;\n}",
+		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\n.mb-kill {\n    margin-bottom: -6px !important;\n}\n\n.fondasi-section{\nmargin: clamp(1rem, 1vw, 1.5rem) auto;\n}\n\n.wp-block-woocommerce-checkout, .wp-block-woocommerce-checkout-order-summary-block .wc-block-components-checkout-order-summary__title {\n    margin: 0;\n    padding-top: 0;\n}\n\n.is-small .wp-block-woocommerce-checkout-order-summary-block.checkout-order-summary-block-fill-wrapper{\n  padding-top: 0;\n}\n\n.wc-block-components-notice-banner{\nmargin:0;\n}\n\n.wc-block-components-address-address-wrapper.is-editing {\n    margin-top: -18px;\n}",
 		"elements": {
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--custom-primary)"
+					"background": "var(--wp--preset--color--custom-accent)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)"
+					"fontFamily": "var(--wp--preset--font-family--geist)"
 				}
 			},
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontFamily": "var(--wp--preset--font-family--geist)",
 					"fontSize": "1.8rem"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontFamily": "var(--wp--preset--font-family--geist)",
 					"fontSize": "1.6rem",
 					"lineHeight": "1.5"
 				}
@@ -186,7 +191,7 @@
 					"text": "var(--wp--preset--color--custom-primary)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontFamily": "var(--wp--preset--font-family--geist)",
 					"fontStyle": "normal",
 					"fontWeight": "700",
 					"lineHeight": "1.5"
@@ -202,7 +207,7 @@
 					"text": "var(--wp--preset--color--custom-primary)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+					"fontFamily": "var(--wp--preset--font-family--geist)",
 					"fontStyle": "normal",
 					"fontWeight": "600",
 					"lineHeight": "1.5",
