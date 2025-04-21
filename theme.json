@@ -35,6 +35,17 @@
 				}
 			]
 		},
+		"custom": {
+			"brandVoice": {
+				"personality": "professional, warm",
+				"tone": "friendly",
+				"writingGuidelines": [
+					"Use simple words",
+					"Avoid jargon",
+					"Encourage action"
+				]
+			}
+		},
 		"dimensions": {
 			"aspectRatios": [
 				{
@@ -45,7 +56,7 @@
 			]
 		},
 		"layout": {
-			"contentSize": "768px",
+			"contentSize": "770px",
 			"wideSize": "1200px"
 		},
 		"spacing": {
@@ -113,9 +124,72 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "4px"
+				}
+			},
+			"core/buttons": {
+				"border": {
+					"radius": "4px"
+				}
+			},
+			"core/column": {
+				"spacing": {
+					"blockGap": "0",
+					"padding": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			},
+			"core/details": {
+				"border": {
+					"bottom": {
+						"style": "none",
+						"width": "0px"
+					},
+					"color": null,
+					"style": null,
+					"width": null
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--40)",
+						"left": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)",
+						"top": "var(--wp--preset--spacing--40)"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--geist)",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			},
 			"core/group": {
 				"spacing": {
 					"blockGap": "0.8rem"
+				}
+			},
+			"core/heading": {
+				"spacing": {
+					"margin": {
+						"bottom": "0.35rem",
+						"top": "0.6rem"
+					}
+				}
+			},
+			"core/paragraph": {
+				"color": {
+					"text": "#676767"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "#676767"
+						}
+					}
 				}
 			},
 			"core/site-tagline": {
@@ -143,32 +217,35 @@
 			"background": "var(--wp--preset--color--custom-light)",
 			"text": "var(--wp--preset--color--custom-primary)"
 		},
-		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\n.mb-kill {\n    margin-bottom: -6px !important;\n}\n\n.fondasi-section{\nmargin: clamp(1rem, 1vw, 1.5rem) auto;\n}\n\n.wp-block-woocommerce-checkout, .wp-block-woocommerce-checkout-order-summary-block .wc-block-components-checkout-order-summary__title {\n    margin: 0;\n    padding-top: 0;\n}\n\n.is-small .wp-block-woocommerce-checkout-order-summary-block.checkout-order-summary-block-fill-wrapper{\n  padding-top: 0;\n}\n\n.wc-block-components-notice-banner{\nmargin:0;\n}\n\n.wc-block-components-address-address-wrapper.is-editing {\n    margin-top: -18px;\n}",
+		"css": "footer{\nmargin-block-start: 0;\n}\n\nfigure{\nmargin: 0;\n}\n\nsummary:focus-visible {\n    outline: none;\n}\n\n.fondasi-section {\n  padding: clamp(1rem, 2vw, 2.4rem);\n  margin: 0 auto;\n}\n\n\n\n\n.wp-site-blocks {\n\n  z-index: -1;\n  background-position: center 0;\n  background-size: 70px;\n  background-repeat: repeat;\n  background-image: url(\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNTAgMi4wMDAwMVY2LjY3NTcyZS0wNkgyTDAgMFYyVjE1MEgyVjJMMTUwIDIuMDAwMDFaIiBvcGFjaXR5PSIwLjAzIiBmaWxsPSJibGFjayIvPjwvc3ZnPg==\");\n}\n\n\n\n\n@media (max-width: 500px) {\n.wp-block-buttons>.wp-block-button.wp-block-button__width-50,\n.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {\n    width: 100%;\n  }\n}\n\n@media (min-width: 501px) and (max-width: 781px) {\n  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {\n    flex-basis: 25% !important;\n  }\n}\n\n\ndetails {\n  transition: all 0.3s ease;\n}\n\nsummary {\n  font-weight: 600;\n  cursor: pointer;\n  list-style: none;\n  position: relative;\n  padding-right: 2em;\n}\n\n/* Icon Arrow Kanan */\nsummary::after {\n  content: '';\n  position: absolute;\n  right: 0.5em;\n  top: 0.5em;\n  width: 1em;\n  height: 1em;\n  background-image: url(\"data:image/svg+xml,%3Csvg fill='none' stroke='%23333' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'%3E%3C/path%3E%3C/svg%3E\");\n  background-repeat: no-repeat;\n  background-size: contain;\n  transform: rotate(0deg);\n  transition: transform 0.3s ease;\n}\n\n/* Saat terbuka, icon berputar */\ndetails[open] summary::after {\n  transform: rotate(90deg);\n}\n\n/* Konten di dalam details */\ndetails > *:not(summary) {\n  margin-top: 1em;\n  color: #333;\n}\n\n\n\n\n\n\n\n",
 		"elements": {
 			"button": {
 				"color": {
 					"background": "var(--wp--preset--color--custom-accent)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--geist)"
+					"fontFamily": "var(--wp--preset--font-family--geist)",
+					"fontSize": "1rem",
+					"fontStyle": "normal",
+					"fontWeight": "600"
 				}
 			},
 			"h1": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--geist)",
-					"fontSize": "1.8rem"
+					"fontSize": "2rem"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--geist)",
-					"fontSize": "1.6rem",
+					"fontSize": "1.8rem",
 					"lineHeight": "1.5"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "1.4rem"
+					"fontSize": "1.6rem"
 				}
 			},
 			"h4": {
@@ -178,7 +255,7 @@
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "1.1rem"
+					"fontSize": "1.05rem"
 				}
 			},
 			"h6": {
@@ -193,8 +270,8 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--geist)",
 					"fontStyle": "normal",
-					"fontWeight": "700",
-					"lineHeight": "1.5"
+					"fontWeight": "600",
+					"lineHeight": "1.4"
 				}
 			},
 			"link": {
@@ -216,7 +293,13 @@
 			}
 		},
 		"spacing": {
-			"blockGap": "15px"
+			"blockGap": "1rem",
+			"padding": {
+				"bottom": "0px",
+				"left": "0px",
+				"right": "0px",
+				"top": "0px"
+			}
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--geist)",
@@ -237,5 +320,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json"
 }
